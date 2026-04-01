@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xcuse</title>
-    <link rel="stylesheet" href="Css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Excuse Generator</title>
+  <link rel="stylesheet" href="Css/style.css" />
 </head>
 <body>
-    
-    <script src="Js/script.js"></script>
+
+  <div class="app">
+    <header>
+      <h1>🎭 Xcuse Generator</h1>
+      <p>Generate smart excuses instantly</p>
+    </header>
+
+    <div class="controls">
+      <select id="category">
+        <option value="">🎲 Random</option>
+        <option value="family">👨‍👩‍👧 Family</option>
+        <option value="office">💼 Office</option>
+        <option value="college">🎓 College</option>
+        <option value="party">🎉 Party</option>
+      </select>
+
+      <button id="generateBtn">Generate Excuse</button>
+    </div>
+
+    <div class="card">
+      <p id="excuseText">Click the button to generate an excuse 👇</p>
+    </div>
+
+    <div class="actions">
+      <button id="copyBtn">📋 Copy</button>
+    </div>
+  </div>
+
+  <script src="Js/script.js"></script>
 </body>
 </html>
