@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Favorites - Xcuse Generator</title>
+  <link rel="stylesheet" href="Css/style.css" />
+</head>
+  <body>
+
+  <nav class="navbar">
+    <div class="nav-brand">🎭 Xcuse</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="favorites.html" class="active">❤️ Favorites</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="favorites-container">
+    <h1>❤️ My Favorites</h1>
+    <p>Your saved excuses at one place</p>
+
+    <div class="search-filter">
+      <input type="text" id="searchInput" placeholder="🔍 Search excuses..." />
+      <select id="sortSelect">
+        <option value="newest">🕐 Newest First</option>
+        <option value="oldest">🕰️ Oldest First</option>
+        <option value="az">🔤 A - Z</option>
+        <option value="za">🔤 Z - A</option>
+        <option value="category">📁 By Category</option>
+      </select>
+    </div>
+
+    <div class="favorites-list" id="favoritesList">
+    </div>
+  </div>
+
+  <script src="Js/favorites.js"></script>
+</body>
+</html>
