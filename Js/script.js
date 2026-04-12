@@ -90,6 +90,27 @@ favBtn.addEventListener("click", addToFavorites);
 
 btn.addEventListener("click", fetchExcuse);
 
+const darkModeToggle = document.getElementById("darkModeToggle");
+
+const savedDarkMode = localStorage.getItem("darkMode");
+const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+if (savedDarkMode === "enabled" || (!savedDarkMode && prefersDarkMode)) {
+  document.body.classList.add("dark-mode");
+}
+
+if (darkModeToggle) {
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("darkMode", "enabled");
+    } else {
+      localStorage.setItem("darkMode", "disabled");
+    }
+  });
+}
+
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 
