@@ -1,5 +1,7 @@
 # Xcuse - Excuse Generator
 
+🚀 **Live Demo**: Check out the live version hosted on Vercel - [xcuse.vercel.app](https://xcuse.vercel.app/)
+
 Xcuse is a fun little web app that generates creative excuses for all those moments when you need a good story. Built with vanilla HTML, CSS, and JavaScript, it fetches excuses from an external API and lets you save your favorites for later.
 
 ## What It Does
